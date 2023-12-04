@@ -7,14 +7,34 @@
 </head>
 <body>
     <h1 class="title">Калькулятор стоимости заточки ножа</h1>
-    <form class="form--parameters">
-        <div class="form__wrap form__wrap--parameters">
+    <form class="form form--parameters">
+        <div class="form__wrap form__wrap--knife-type">
             <label for="knife-type" class="form__label form__label--type">Вид ножа</label>
             <select name="" class="form__select" id="knife-type">
                 <option value="1">Normal blade</option>
                 <option value="2">Drop-point</option>
                 <option value="3">Clip-point</option>
             </select>
+        </div>
+        <div class="form__wrap form__wrap--steel-quality">
+            <label for="quality-list" class="form__label form__label--type">Качество стали</label>
+            <ul id="quality-list" class="form__list form__list--quality">
+                <li class="form__item">
+                    <input type="radio" name="" id="">"Пластилин"</input>
+                </li>
+                <li class="form__item">
+                    <input type="radio" name="" id="">Массовая</input>
+                </li>
+                <li class="form__item">
+                    <input type="radio" name="" id="">Качественная</input>
+                </li>
+                <li class="form__item">
+                    <input type="radio" name="" id="">Сверхпрочная</input>
+                </li>
+                <li class="form__item">
+                    <input type="radio" name="" id="">Керамика</input>
+                </li>
+            </ul>
         </div>
     </form>
 
