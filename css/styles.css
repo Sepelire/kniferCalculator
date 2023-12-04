@@ -73,3 +73,27 @@
 }
 /* parameters end */
 
+/* operation start */
+.form--operation {
+    gap: 5px;
+}
+
+.form__list {
+}
+
+.form__list--operation {
+    display: flex;
+    flex-direction: column;
+}   
+
+.form__item {
+}
+
+.form__item--operation {
+    display: flex;
+    gap: 10px;
+}
+
+.item__description {
+}
+/* operation end */
