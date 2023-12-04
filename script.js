@@ -9,3 +9,16 @@ lengthNumber.addEventListener('input', function() {
     lengthRange.value = lengthNumber.value;
 });
 
+function calcResult() {
+    let knifeTypeCoef = document.getElementById('knife-type').value;
+    let steelQualityCoef = document.querySelector('input[name="radio-button--quality"]:checked').value;
+    let lengthCost = document.getElementById('length-number').value * 2.5;
+    let operationSelectors = document.querySelectorAll('input[name="checkbox--operation"]:checked');
+    
+    let operationTypeCoef = calcOperationSelectors(operationSelectors);
+
+    let result = lengthCost + (lengthCost * knifeTypeCoef) + (lengthCost * steelQualityCoef) + (lengthCost * operationTypeCoef);
+    
+    showResult( result );
+}
+

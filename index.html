@@ -14,39 +14,39 @@
         <form class="form form--parameters">
             <div class="form__wrap form__wrap--knife-type">
                 <label for="knife-type" class="form__label form__label--type">Вид ножа</label>
-                <select name="" class="form__select" id="knife-type">
-                    <option value="1">Normal blade</option>
-                    <option value="2">Drop-point</option>
-                    <option value="3">Clip-point</option>
+                <select name="" class="form__select" id="knife-type" onchange="calcResult()">
+                    <option value="0">Normal blade</option>
+                    <option value="0.1">Drop-point</option>
+                    <option value="0.2">Clip-point</option>
                 </select>
             </div>
             <div class="form__wrap form__wrap--steel-quality">
                 <label for="quality-list" class="form__label form__label--quality">Качество стали</label>
                 <ul id="quality-list" class="form__list form__list--quality">
                     <li class="form__item form__item--quality">
-                        <input type="radio" name="" id="">"Пластилин"</input>
+                        <input type="radio" name="radio-button--quality" id="steel-quality" value="0" onchange="calcResult()">"Пластилин"</input>
                     </li>
                     <li class="form__item form__item--quality">
-                        <input type="radio" name="" id="">Массовая</input>
+                        <input type="radio" name="radio-button--quality" id="steel-quality" value="0.1" onchange="calcResult()">Массовая</input>
                     </li>
                     <li class="form__item form__item--quality">
-                        <input type="radio" name="" id="">Качественная</input>
+                        <input type="radio" name="radio-button--quality" id="steel-quality" value="0.2" onchange="calcResult()">Качественная</input>
                     </li>
                     <li class="form__item form__item--quality">
-                        <input type="radio" name="" id="">Сверхпрочная</input>
+                        <input type="radio" name="radio-button--quality" id="steel-quality" value="0.3" onchange="calcResult()">Сверхпрочная</input>
                     </li>
                     <li class="form__item form__item--quality">
-                        <input type="radio" name="" id="">Керамика</input>
+                        <input type="radio" name="radio-button--quality" id="steel-quality" value="0.4" onchange="calcResult()">Керамика</input>
                     </li>
                 </ul>
             </div>
             <div class="form__wrap form__wrap--knife-length">
                 <label for="length-number" class="form__label form__label--length">Длина лезвия ножа</label>
                 <div class="input-number__wrap">
-                    <input type="number" value="50" id="length-number" class="form__input-number">
+                    <input type="number" value="50" id="length-number" class="form__input-number" onchange="calcResult()">
                     <span>мм</span>
                 </div>
-                <input type="range" value="50" id="length-range" min="0" max="100" class="form__input-range">
+                <input type="range" value="50" id="length-range" min="0" max="100" class="form__input-range" onchange="calcResult()"> 
             </div>
         </form>
 
@@ -55,27 +55,27 @@
             <ul id="operation-list" class="form__list form__list--operation">
                 <li class="form__item form__item--operation">
                     <label for="">Ремонт</label>
-                    <input type="checkbox" id="">
+                    <input type="checkbox" id="operation-type" name="checkbox--operation" value="0" onchange="calcResult()">
                     <p class="item__description">Текст</p>
                 </li>
                 <li class="form__item form__item--operation">
                     <label for="">Обдирка</label>
-                    <input type="checkbox" id="">
+                    <input type="checkbox" id="operation-type" name="checkbox--operation" value="0.1" onchange="calcResult()">
                     <p class="item__description">Текст</p>
                 </li>
                 <li class="form__item form__item--operation">
                     <label for="">Заточка</label>
-                    <input type="checkbox" id="">
+                    <input type="checkbox" id="operation-type" name="checkbox--operation" value="0.2" onchange="calcResult()">
                     <p class="item__description">Текст</p>
                 </li>
                 <li class="form__item form__item--operation">
                     <label for="">Доводка</label>
-                    <input type="checkbox" id="">
+                    <input type="checkbox" id="operation-type" name="checkbox--operation" value="0.3" onchange="calcResult()">
                     <p class="item__description">Текст</p>
                 </li>
                 <li class="form__item form__item--operation">
                     <label for="">Реставрация</label>
-                    <input type="checkbox" id="">
+                    <input type="checkbox" id="operation-type" name="checkbox--operation" value="0.4" onchange="calcResult()">
                     <p class="item__description">Текст</p>
                 </li>
             </ul>
@@ -84,7 +84,7 @@
         <div class="result-wrap">
             <h2 class="title title--result">Примерная стоимость работ</h2>
             <div class="result-input__wrap">
-                <label id="result"></label>
+                <label id="result-label">0</label>
                 <span>рублей</span>
             </div>
         </div>
