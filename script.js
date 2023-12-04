@@ -32,3 +32,6 @@ function calcOperationSelectors(operationSelectors) {
     return operationTypeCoef;
 }
 
+function showResult(result) {
+    document.getElementById("result-label").innerText = result;
+}
