@@ -22,3 +22,13 @@ function calcResult() {
     showResult( result );
 }
 
+function calcOperationSelectors(operationSelectors) {
+    let operationTypeCoef = 0;
+
+    for (let i = 0; i < operationSelectors.length; i++) {
+        operationTypeCoef += parseFloat(operationSelectors[i].value);
+    };
+
+    return operationTypeCoef;
+}
+
