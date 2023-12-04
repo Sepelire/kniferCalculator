@@ -97,3 +97,16 @@
 .item__description {
 }
 /* operation end */
+
+/* result start */
+.result-wrap {
+}
+
+.title--result {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.result-input__wrap {
+}
+/* result end */
