@@ -8,81 +8,86 @@
     <title>Sharepening the knife</title>
 </head>
 <body>
-    <h1 class="title">Калькулятор стоимости заточки ножа</h1>
-    <form class="form form--parameters">
-        <div class="form__wrap form__wrap--knife-type">
-            <label for="knife-type" class="form__label form__label--type">Вид ножа</label>
-            <select name="" class="form__select" id="knife-type">
-                <option value="1">Normal blade</option>
-                <option value="2">Drop-point</option>
-                <option value="3">Clip-point</option>
-            </select>
-        </div>
-        <div class="form__wrap form__wrap--steel-quality">
-            <label for="quality-list" class="form__label form__label--quality">Качество стали</label>
-            <ul id="quality-list" class="form__list form__list--quality">
-                <li class="form__item form__item--quality">
-                    <input type="radio" name="" id="">"Пластилин"</input>
+    <main class="content">
+        <h1 class="title title--main">Калькулятор стоимости заточки ножа</h1>
+
+        <form class="form form--parameters">
+            <div class="form__wrap form__wrap--knife-type">
+                <label for="knife-type" class="form__label form__label--type">Вид ножа</label>
+                <select name="" class="form__select" id="knife-type">
+                    <option value="1">Normal blade</option>
+                    <option value="2">Drop-point</option>
+                    <option value="3">Clip-point</option>
+                </select>
+            </div>
+            <div class="form__wrap form__wrap--steel-quality">
+                <label for="quality-list" class="form__label form__label--quality">Качество стали</label>
+                <ul id="quality-list" class="form__list form__list--quality">
+                    <li class="form__item form__item--quality">
+                        <input type="radio" name="" id="">"Пластилин"</input>
+                    </li>
+                    <li class="form__item form__item--quality">
+                        <input type="radio" name="" id="">Массовая</input>
+                    </li>
+                    <li class="form__item form__item--quality">
+                        <input type="radio" name="" id="">Качественная</input>
+                    </li>
+                    <li class="form__item form__item--quality">
+                        <input type="radio" name="" id="">Сверхпрочная</input>
+                    </li>
+                    <li class="form__item form__item--quality">
+                        <input type="radio" name="" id="">Керамика</input>
+                    </li>
+                </ul>
+            </div>
+            <div class="form__wrap form__wrap--knife-length">
+                <label for="length-input" class="form__label form__label--length">Длина лезвия ножа</label>
+                <div class="input-number__wrap">
+                    <input type="number" value="50" id="length-input" class="form__input-number">
+                    <span>мм</span>
+                </div>
+                <input type="range" value="50" id="length-range" min="0" max="100" class="form__input-range">
+            </div>
+        </form>
+
+        <form class="form form--operation">
+            <label for="operation-list">Что делать:</label>
+            <ul id="operation-list" class="form__list form__list--operation">
+                <li class="form__item form__item--operation">
+                    <label for="">Ремонт</label>
+                    <input type="checkbox" id="">
+                    <p class="item__description">Текст</p>
                 </li>
-                <li class="form__item form__item--quality">
-                    <input type="radio" name="" id="">Массовая</input>
+                <li class="form__item form__item--operation">
+                    <label for="">Обдирка</label>
+                    <input type="checkbox" id="">
+                    <p class="item__description">Текст</p>
                 </li>
-                <li class="form__item form__item--quality">
-                    <input type="radio" name="" id="">Качественная</input>
+                <li class="form__item form__item--operation">
+                    <label for="">Заточка</label>
+                    <input type="checkbox" id="">
+                    <p class="item__description">Текст</p>
                 </li>
-                <li class="form__item form__item--quality">
-                    <input type="radio" name="" id="">Сверхпрочная</input>
+                <li class="form__item form__item--operation">
+                    <label for="">Доводка</label>
+                    <input type="checkbox" id="">
+                    <p class="item__description">Текст</p>
                 </li>
-                <li class="form__item form__item--quality">
-                    <input type="radio" name="" id="">Керамика</input>
+                <li class="form__item form__item--operation">
+                    <label for="">Реставрация</label>
+                    <input type="checkbox" id="">
+                    <p class="item__description">Текст</p>
                 </li>
             </ul>
-        </div>
-        <div class="form__wrap form__wrap--knife-length">
-            <label for="length-input" class="form__label form__label--length">Длина лезвия ножа</label>
-            <div class="input-number__wrap">
-                <input type="number" value="50" id="length-input">
-                <span>мм</span>
+        </form>
+
+        <div class="result-wrap">
+            <h2 class="title title--result">Примерная стоимость работ</h2>
+            <div class="result-input__wrap">
+                <label id="result"></label>
+                <span>рублей</span>
             </div>
-            <input type="range" value="50" id="length-range" min="0" max="100">
         </div>
-    </form>
-    <form class="form form--operation">
-        <label for="operation-list"></label>
-        <ul id="operation-list" class="form__list form__list--operation">
-            <li class="form__item form__item--operation">
-                <label for="">Ремонт</label>
-                <input type="checkbox" id="">
-                <p class="item__description">Текст</p>
-            </li>
-            <li class="form__item form__item--operation">
-                <label for="">Обдирка</label>
-                <input type="checkbox" id="">
-                <p class="item__description">Текст</p>
-            </li>
-            <li class="form__item form__item--operation">
-                <label for="">Заточка</label>
-                <input type="checkbox" id="">
-                <p class="item__description">Текст</p>
-            </li>
-            <li class="form__item form__item--operation">
-                <label for="">Доводка</label>
-                <input type="checkbox" id="">
-                <p class="item__description">Текст</p>
-            </li>
-            <li class="form__item form__item--operation">
-                <label for="">Реставрация</label>
-                <input type="checkbox" id="">
-                <p class="item__description">Текст</p>
-            </li>
-        </ul>
-    </form>
-    <div class="result-wrap">
-        <h2 class="title title--result">Примерная стоимость работ</h2>
-        <div class="result-input__wrap">
-            <label id="result"></label>
-            <span>рублей</span>
-        </div>
-    </div>
+    <main>
 </body> 
 </html>

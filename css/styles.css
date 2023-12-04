@@ -1,0 +1,75 @@
+.content {
+    margin-left: 10px;
+}
+
+.title--main {
+    padding-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: green;
+}
+
+/* parameters start */
+.form {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form--parameters {
+    gap: 20px;
+}
+
+.form__wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__wrap--knife-type {
+}
+
+.form__label {
+}
+.form__label--type {
+}
+
+.form__select {
+    width: 150px;
+}
+
+.form__wrap--steel-quality {
+    flex-direction: column;
+}
+
+.form__label--quality {
+}
+
+.form__list {
+    display: flex;
+}
+
+.form__list--quality {
+    gap: 15px;
+}
+
+.form__item {
+}
+
+.form__item--quality {
+}
+.form__wrap--knife-length {
+}
+.form__label--length {
+}
+.input-number__wrap {
+}
+
+.form__input-number {
+    width: 100px;
+}
+
+.form__input-range {
+    width: 200px;
+}
+/* parameters end */
+
